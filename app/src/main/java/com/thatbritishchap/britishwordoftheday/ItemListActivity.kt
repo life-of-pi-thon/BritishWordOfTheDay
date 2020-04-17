@@ -1,5 +1,6 @@
 package com.thatbritishchap.britishwordoftheday
 
+import android.content.Context
 import android.content.Intent
 import android.os.Bundle
 import android.util.Log.d
@@ -42,9 +43,12 @@ class ItemListActivity : AppCompatActivity() {
         goToAddProduct.setOnClickListener {
             d("goToAddProduct", "let's add a product")
             startActivity(Intent(this, AddProductActivity::class.java))
-
         }
 
+        goToProductView.setOnClickListener {
+            d("goToProductView", "let's view the products")
+            startActivity(Intent(this, ProductViewActivity::class.java))
+        }
 
         fab.setOnClickListener { view ->
             Snackbar.make(view, "Replace with your own action", Snackbar.LENGTH_LONG)

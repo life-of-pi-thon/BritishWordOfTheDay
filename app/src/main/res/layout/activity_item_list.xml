@@ -21,12 +21,19 @@
 
         <Button
             android:id="@+id/goToAddProduct"
-            android:layout_width="400dp"
+            android:layout_width="match_parent"
             android:layout_height="wrap_content"
-            android:background="#F8EFEF"
+            android:background="@color/colorAccent"
             android:text="go to add product"
             android:textColorHighlight="#A62F2F"
             android:textColorLink="#DA4D4D" />
+
+        <Button
+            android:id="@+id/goToProductView"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:background="#F8D4F8"
+            android:text="Go To Product View" />
 
     </com.google.android.material.appbar.AppBarLayout>
 
@@ -37,6 +44,7 @@
         app:layout_behavior="@string/appbar_scrolling_view_behavior">
 
         <include layout="@layout/item_list" />
+
     </FrameLayout>
 
     <com.google.android.material.floatingactionbutton.FloatingActionButton
